@@ -4,6 +4,11 @@ import federation from "@originjs/vite-plugin-federation";
 
 // https://vite.dev/config/
 export default defineConfig({
+  build: {
+    rolldownOptions: {
+        input: "/src/main.tsx",
+    },
+  },
   plugins: [
     react(),
     federation({
