@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
-    "test-build": "node ./scripts/build.mjs",
-    "lint": "eslint .",
+    "test-build:fs": "node ./scripts/build-fs-setup.mjs",
+    "test-build:watcher": "node ./scripts/build-watcher-setup.mjs",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -16,11 +16,11 @@
   },
   "devDependencies": {
     "@originjs/vite-plugin-federation": "1.4.1",
-    "@types/node": "24.12.3",
+    "@types/node": "22.18.0",
     "@types/react": "19.2.14",
     "@types/react-dom": "19.2.3",
     "@vitejs/plugin-react": "6.0.1",
     "typescript": "6.0.2",
-    "vite": "8.0.12"
+    "vite": "8.0.16"
   }
 }
